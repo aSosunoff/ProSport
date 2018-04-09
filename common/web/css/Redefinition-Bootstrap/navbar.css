@@ -1,0 +1,11 @@
+.navbar-default {
+    background-color: transparent;
+    border: 0px;
+    background-image: none;
+}
+.navbar {
+    min-height: inherit;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    box-shadow: none;
+}

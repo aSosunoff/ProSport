@@ -1,0 +1,11 @@
+.letter-space-2{ letter-spacing: 2px; }
+.letter-space-3{ letter-spacing: 3px; }
+.letter-space-4{ letter-spacing: 4px; }
+.letter-space-5{ letter-spacing: 5px; }
+
+.custom-icon-logo{
+    padding: 0px 0px 10px 0px;
+}
+.custom-icon-logo:before {
+    font-size: 40px;
+}

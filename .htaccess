@@ -1,0 +1,72 @@
+#---------------------------------------------------------------------------------------#
+# https://habrahabr.ru/post/140693/                                                     #
+# https://geektimes.ru/post/83597/                                                      #
+# https://geektimes.ru/post/47650/                                                      #
+# https://habrahabr.ru/company/sprinthost/blog/129560/                                  #
+# http://htaccess.net.ru/                                                               #
+# http://lavrik-v.ru/info/260/YII_2_ADVANCED_htaccess_primer_pravilnoj_nastrojki.html   #
+#---------------------------------------------------------------------------------------#
+
+# запрет выдачи листинга пустого каталога
+# запрещаем отображать содержимое директории, если нет индексного файла
+Options -Indexes
+
+Options +FollowSymLinks
+IndexIgnore */*
+
+# mod_rewrite — это модуль для веб-сервера Apache, предназначенный для преобразования URL-ов.
+# включаем mod_rewrite
+RewriteEngine on
+
+# запретит доступ к файлу .htaccess в случае дурно настроенного хостинга.
+RewriteRule .htaccess - [F]
+
+# указывает модулю mod_rewrite, что текущая папка в файловой системе соответствует корню сайта
+# обрезает полный путь (от корня сервера) до корня сайта.
+RewriteBase /
+
+# непосредственно правило преобразования URL
+# Если сразу после начала строки ("^") идет произвольное количество любых
+# символов ( "(.*)" ), причем мы хотим запомнить, что именно это за символы,
+# окружая их скобками, затем идет точка ("\.") (экранируем точку, потому что
+# одиночная точка — это просто любой символ), затем символы «msl» и на этом строка
+# заканчивается ("$"), то заменим исходный URL на следующий: возьмем первую запомненную
+# подстроку в скобках из правила, прибавим к ней ".php", добавим все
+# дополнительные параметры адреса, которые могли быть "[QSA]" и на этом закончим,
+# не будем применять дальнейшие преобразования, если они есть "[L]"
+
+# Если запрос начинается с /adminpanel, то заменяем на /backend/web/
+RewriteCond %{REQUEST_URI} ^/adminpanel
+RewriteRule ^adminpanel\/?(.*) /backend/web/$1
+# RewriteRule ^adminpanel\/?(.*) /backend/web/$1
+
+RewriteCond %{REQUEST_URI} ^/images
+RewriteRule ^images\/?(.*) /frontend/web/images/$1
+
+RewriteCond %{REQUEST_URI} ^/css
+RewriteRule ^css\/?(.*) /frontend/web/css/$1
+
+RewriteCond %{REQUEST_URI} ^/js
+RewriteRule ^js\/?(.*) /frontend/web/js/$1
+
+RewriteCond %{REQUEST_URI} ^/common/js
+RewriteRule ^common/js\/?(.*) /common/web/js/$1
+
+RewriteCond %{REQUEST_URI} ^/common/css
+RewriteRule ^common/css\/?(.*) /common/web/css/$1
+
+# Добавляем другой запрос /frontend/web/$1
+RewriteCond %{REQUEST_URI} !^/(frontend/web|backend/web|common/web|adminpanel|images|css|js|common/js|common/css)
+RewriteRule (.*) /frontend/web/$1
+
+# Если frontend запрос
+RewriteCond %{REQUEST_URI} ^/frontend/web
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /frontend/web/index.php
+
+# Если backend запрос
+RewriteCond %{REQUEST_URI} ^/backend/web
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /backend/web/index.php

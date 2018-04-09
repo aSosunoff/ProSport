@@ -1,8 +1,9 @@
 <?php
-namespace common\models;
+namespace common\models\form;
 
 use Yii;
 use yii\base\Model;
+use common\models\engine\User;
 
 /**
  * Login form
@@ -15,15 +16,24 @@ class LoginForm extends Model
 
     private $_user;
 
-
+    public function attributeLabels()
+    {
+        return [
+            'username' => 'Логин',
+            'password' => 'Пароль',
+            'rememberMe' => 'Запомнить меня',
+        ];
+    }
     /**
-     * {@inheritdoc}
+     * @inheritdoc
      */
     public function rules()
     {
         return [
             // username and password are both required
             [['username', 'password'], 'required'],
+
+            [['username', 'password'], 'frontend\infrastructure\CheckOnSpam', 'message' => 'Поле содержит запрещённые символы, слова'],
             // rememberMe must be a boolean value
             ['rememberMe', 'boolean'],
             // password is validated by validatePassword()
@@ -43,7 +53,7 @@ class LoginForm extends Model
         if (!$this->hasErrors()) {
             $user = $this->getUser();
             if (!$user || !$user->validatePassword($this->password)) {
-                $this->addError($attribute, 'Incorrect username or password.');
+                $this->addError($attribute, 'Неверное имя пользователя или пароль.');
             }
         }
     }

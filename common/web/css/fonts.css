@@ -1,0 +1,77 @@
+/*
+ *  ROBOTO_CONDENSED
+ */
+
+.RobotoCR{ font-family: "RobotoCondensedRegular"; }
+.RobotoCL{ font-family: "RobotoCondensedLight"; }
+.RobotoCB{ font-family: "RobotoCondensedBold"; }
+
+/* font-family: "RobotoCondensedRegular"; */
+@font-face {
+    font-family: "RobotoCondensedRegular";
+    src: url("/common/css/fonts/RobotoCondensed/RobotoCondensedRegular/RobotoCondensedRegular.eot");
+    src: url("/common/css/fonts/RobotoCondensed/RobotoCondensedRegular/RobotoCondensedRegular.eot?#iefix")format("embedded-opentype"),
+    url("/common/css/fonts/RobotoCondensed/RobotoCondensedRegular/RobotoCondensedRegular.woff") format("woff"),
+    url("/common/css/fonts/RobotoCondensed/RobotoCondensedRegular/RobotoCondensedRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoCondensedLight"; */
+@font-face {
+    font-family: "RobotoCondensedLight";
+    src: url("/common/css/fonts/RobotoCondensed/RobotoCondensedLight/RobotoCondensedLight.eot");
+    src: url("/common/css/fonts/RobotoCondensed/RobotoCondensedLight/RobotoCondensedLight.eot?#iefix")format("embedded-opentype"),
+    url("/common/css/fonts/RobotoCondensed/RobotoCondensedLight/RobotoCondensedLight.woff") format("woff"),
+    url("/common/css/fonts/RobotoCondensed/RobotoCondensedLight/RobotoCondensedLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoCondensedBold"; */
+@font-face {
+    font-family: "RobotoCondensedBold";
+    src: url("/common/css/fonts/RobotoCondensed/RobotoCondensedBold/RobotoCondensedBold.eot");
+    src: url("/common/css/fonts/RobotoCondensed/RobotoCondensedBold/RobotoCondensedBold.eot?#iefix")format("embedded-opentype"),
+    url("/common/css/fonts/RobotoCondensed/RobotoCondensedBold/RobotoCondensedBold.woff") format("woff"),
+    url("/common/css/fonts/RobotoCondensed/RobotoCondensedBold/RobotoCondensedBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*
+ * OPEN_SANS_CONDENSED
+ */
+
+.OpenSeansCL{ font-family: "OpenSansCondensedLight"; }
+.OpenSeansCLI{ font-family: "OpenSansCondensedLightItalic"; }
+.OpenSeansCB{ font-family: "OpenSansCondensedBold"; }
+
+/* font-family: "OpenSansCondensedLight"; */
+@font-face {
+    font-family: "OpenSansCondensedLight";
+    src: url("/common/css/fonts/OpenSansCondensed/OpenSansCondensedLight/OpenSansCondensedLight.eot");
+    src: url("/common/css/fonts/OpenSansCondensed/OpenSansCondensedLight/OpenSansCondensedLight.eot?#iefix")format("embedded-opentype"),
+    url("/common/css/fonts/OpenSansCondensed/OpenSansCondensedLight/OpenSansCondensedLight.woff") format("woff"),
+    url("/common/css/fonts/OpenSansCondensed/OpenSansCondensedLight/OpenSansCondensedLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansCondensedLightItalic"; */
+@font-face {
+    font-family: "OpenSansCondensedLightItalic";
+    src: url("/common/css/fonts/OpenSansCondensed/OpenSansCondensedLightItalic/OpenSansCondensedLightItalic.eot");
+    src: url("/common/css/fonts/OpenSansCondensed/OpenSansCondensedLightItalic/OpenSansCondensedLightItalic.eot?#iefix")format("embedded-opentype"),
+    url("/common/css/fonts/OpenSansCondensed/OpenSansCondensedLightItalic/OpenSansCondensedLightItalic.woff") format("woff"),
+    url("/common/css/fonts/OpenSansCondensed/OpenSansCondensedLightItalic/OpenSansCondensedLightItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansCondensedBold"; */
+@font-face {
+    font-family: "OpenSansCondensedBold";
+    src: url("/common/css/fonts/OpenSansCondensed/OpenSansCondensedBold/OpenSansCondensedBold.eot");
+    src: url("/common/css/fonts/OpenSansCondensed/OpenSansCondensedBold/OpenSansCondensedBold.eot?#iefix")format("embedded-opentype"),
+    url("/common/css/fonts/OpenSansCondensed/OpenSansCondensedBold/OpenSansCondensedBold.woff") format("woff"),
+    url("/common/css/fonts/OpenSansCondensed/OpenSansCondensedBold/OpenSansCondensedBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

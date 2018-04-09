@@ -1,0 +1,41 @@
+.b-menu{
+    color: #fff;
+    padding: 10px 0px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background-color: rgba(52, 59, 71, 0.5);
+    -webkit-transition: background-color .3s ease;
+    -moz-transition: background-color .3s ease;
+    -ms-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+}
+.b-menu a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.b-menu.small-height .nav > li > a{
+    padding: 2px 15px;
+}
+
+.b-menu_items{
+    padding: 10px 0px;
+}
+
+.b-menu_items > li > a{
+    font-size: 16px;
+    padding: 5px 0px;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    transition: border .2s linear;
+}
+
+.b-menu_items > li > a:hover,
+.b-menu_items > li > a:focus {
+    text-decoration: none;
+    border: 3px solid #FB3C65;
+    background-color: transparent;
+    font-weight: bold;
+}

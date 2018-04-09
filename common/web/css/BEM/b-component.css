@@ -1,0 +1,91 @@
+.b-btn{
+    text-align: center;
+    background-color: #FB3C65;
+    padding: 5px;
+    display: inline-block;
+    transition: all .2s;
+    color: #fff;
+    transition: all .2s;
+    font-size: 16px;
+    font-family: OpenSansCondensedBold;
+}
+.input-group-btn .b-btn{
+    height: 44px;
+}
+
+.b-btn-big{
+    text-align: center;
+    background-color: #FB3C65;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: all .2s;
+    color: #fff;
+    transition: all .2s;
+    font-size: 20px;
+    font-family: OpenSansCondensedBold;
+}
+
+.b-btn:hover,
+.b-btn-big:hover{
+    color: #fff !important;
+    box-shadow: 2px 2px 5px #636363;
+    cursor: pointer;
+}
+
+.b-btn-link{
+    text-align: center;
+    color: #FB3C65;
+    padding: 1px 8px;
+    display: inline-block;
+    transition: all .2s;
+    font-size: 14px;
+    font-family: RobotoCondensedLight;
+}
+.b-btn-link:hover{
+    color: #fff;
+    background-color: #FB3C65;
+    box-shadow: 2px 2px 5px #636363;
+    cursor: pointer;
+}
+
+.b-textarea{
+    resize: vertical;
+}
+
+.b-input{
+    height: 44px;
+}
+
+.b-input,
+.b-textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: all .2s;
+
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+    background-color: transparent;
+    border: 1px solid #FB3C65 !important;
+    border-top: 1px solid transparent !important;
+    border-right: 1px solid transparent !important;
+
+}
+
+.b-input:active,
+.b-input:hover,
+.b-input:focus,
+.b-textarea:active,
+.b-textarea:hover,
+.b-textarea:focus{
+    border: 1px solid #FB3C65 !important;
+    box-shadow: -2px 2px 1px #FB3C65;
+    outline: none 0px;
+}
+
+button{
+    margin: 0px !important;
+    border: 0px !important;
+}

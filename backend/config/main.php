@@ -8,19 +8,37 @@ $params = array_merge(
 
 return [
     'id' => 'app-backend',
+    'homeUrl' => '/adminpanel',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
+    'language' => 'ru',
     'modules' => [],
     'components' => [
         'request' => [
+            'baseUrl' => '/adminpanel',
             'csrfParam' => '_csrf-backend',
+            // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
+            'cookieValidationKey' => 'DHRm3IDFER123ERdfsdf-3CFB6-yyZExG',
         ],
         'user' => [
-            'identityClass' => 'common\models\User',
+            'identityClass' => 'common\models\engine\User',
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
+            'loginUrl' => ['authentication/login'],
         ],
+        'urlManager' => [
+            'enableStrictParsing' => false,
+        ],
+//        'urlManager' => [
+//            'normalizer' => [
+//                'class' => 'yii\web\UrlNormalizer'
+//            ],
+//            'rules' => [
+//                // for work to js file
+//                'role-search-user' => 'role/search-user',
+//            ],
+//        ],
         'session' => [
             // this is the name of the session cookie used for login on the backend
             'name' => 'advanced-backend',
@@ -35,16 +53,8 @@ return [
             ],
         ],
         'errorHandler' => [
-            'errorAction' => 'site/error',
+            'errorAction' => 'error/error',
         ],
-        /*
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
-        ],
-        */
     ],
     'params' => $params,
 ];

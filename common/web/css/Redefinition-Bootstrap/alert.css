@@ -1,0 +1,28 @@
+.alert {
+    border: 1px solid #da6334;
+    text-shadow: none;
+}
+
+.alert-success{
+    background-color: rgba(178, 219, 161, 1);
+}
+
+.alert-danger{
+    background-color: rgba(220, 167, 167, 1);
+}
+
+.alert-info{
+    background-color: rgba(154, 207, 234, 1);
+}
+
+.alert-warning{
+    background-color: rgba(245, 231, 158, 1);
+}
+
+.alert-success,
+.alert-danger,
+.alert-info,
+.alert-warning{
+    color: #da6334;
+    background-image: none;
+}

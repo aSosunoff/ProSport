@@ -1,0 +1,21 @@
+Options +FollowSymLinks
+IndexIgnore */*
+
+# use mod_rewrite for pretty URL support
+# включаем mod_rewrite
+RewriteEngine on
+# запретит доступ к файлу .htaccess в случае дурно настроенного хостинга.
+RewriteRule .htaccess - [F]
+
+# Don't favicon!
+# RewriteCond %{REQUEST_FILENAME} !^favicon\.ico
+
+# if a directory or a file exists, use the request directly
+# условие, что все существующие папки не будут обрабатываться регулярным выражением
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# условие, что все существующие файлы не будут обрабатываться регулярным выражением
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward the request to index.php
+RewriteRule . index.php

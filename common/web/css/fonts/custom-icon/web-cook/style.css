@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'dev-icon';
+  src:  url('/common/css/fonts/custom-font-icon/web-cook/fonts/dev-icon.eot?n9ub0b');
+  src:  url('/common/css/fonts/custom-font-icon/web-cook/fonts/dev-icon.eot?n9ub0b#iefix') format('embedded-opentype'),
+    url('/common/css/fonts/custom-font-icon/web-cook/fonts/dev-icon.ttf?n9ub0b') format('truetype'),
+    url('/common/css/fonts/custom-font-icon/web-cook/fonts/dev-icon.woff?n9ub0b') format('woff'),
+    url('/common/css/fonts/custom-font-icon/web-cook/fonts/dev-icon.svg?n9ub0b#dev-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="dev-icon-"], [class*=" dev-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'dev-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dev-icon-web-cook:before {
+  content: "\e900";
+}
