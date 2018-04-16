@@ -68,7 +68,7 @@ class m180406_195803_create_exception_table extends Migration
             'ID_EXCEPTION_LOG_STATUS' => $this->integer()->unsigned()->notNull(),
             'MESSAGE' => $this->text()->null(),
             'CODE' => $this->integer()->unsigned()->null(),
-            'FINE' => $this->string(500)->null(),
+            'FILE' => $this->string(500)->null(),
             'LINE' => $this->integer()->unsigned()->null(),
             'TRACE' => $this->longText()->null(),
             'CREATED_AT' => $this->integer()->unsigned()->notNull(),

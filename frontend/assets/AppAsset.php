@@ -40,7 +40,7 @@ class AppAsset extends AssetBundle
             'library/owlcarousel/owl.carousel.js',
             'library/elevatezoom/jquery.elevatezoom.js',
             'library/fancybox/dist/jquery.fancybox.js',
-
+            'library/landing-nav/navigation.js',
 
             'js/frontend.js',
             'js/setting.js',

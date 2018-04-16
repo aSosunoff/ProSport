@@ -33,7 +33,7 @@ class LoginForm extends Model
             // username and password are both required
             [['username', 'password'], 'required'],
 
-            [['username', 'password'], 'frontend\infrastructure\CheckOnSpam', 'message' => 'Поле содержит запрещённые символы, слова'],
+            [['username', 'password'], 'common\infrastructure\CheckOnSpam', 'message' => 'Поле содержит запрещённые символы, слова'],
             // rememberMe must be a boolean value
             ['rememberMe', 'boolean'],
             // password is validated by validatePassword()

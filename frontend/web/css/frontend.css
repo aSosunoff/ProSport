@@ -7,6 +7,115 @@
     color: #fff; /* Firefox */
 }
 
+a:hover, a:focus {
+    color: #FB3C65;
+    text-decoration: inherit;
+}
+
+/* Footer custom */
+.footer .footer-border{
+    border-bottom: 1px solid #FB3C65;
+}
+.footer .footer-up{
+    background: #343B47;
+    padding: 15px 15px 0px 15px;
+}
+.footer .footer-down{
+    background-color: #000000;
+    padding: 15px;
+}
+/***/
+.big-text{
+    font-family: "OpenSansCondensedBold";
+    font-size: 80px;
+    color: #FB3C65;
+}
+
+
+
+#top_1{
+    min-height: 960px;
+}
+.top_1{
+    background-attachment: fixed;
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-image: url("/images/1234.jpg");
+}
+
+#about_1{
+}
+.about_1{
+    background-color: #e3ffec;
+}
+
+#about_2{
+
+}
+.about_2{
+    background-color: #fff;
+}
+
+#about_3{
+}
+.about_3{
+    background:
+            radial-gradient(black 15%, transparent 16%) 0 0,
+            radial-gradient(black 15%, transparent 16%) 8px 8px,
+            radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+            radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+}
+
+#product_1{
+}
+.product_1{
+    background-color: #ffffff;
+}
+
+#guarantees_1{
+}
+.guarantees_1{
+    background-color: #ffffff;
+}
+
+#guarantees_2{
+    min-height: 960px;
+}
+.guarantees_2{
+    background-color: #56ff83;
+}
+
+#order_1{
+    min-height: 960px;
+}
+.order_1{
+    background-color: #56ff83;
+}
+
+#review_1{
+    min-height: 960px;
+}
+.review_1{
+    background-color: #56ff83;
+}
+
+#contact_1{
+    min-height: 960px;
+}
+.contact_1{
+    background-color: #56ff83;
+}
+
+#address_1{
+}
+.address_1{
+    background-color: #fff;
+    padding: 128px 0 0px 0px;
+}
 /*MEDIA*/
 
 /*==========  Desktop First Method  ==========*/

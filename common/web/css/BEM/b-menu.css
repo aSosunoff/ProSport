@@ -11,6 +11,11 @@
     -o-transition: background-color .3s ease;
     transition: background-color .3s ease;
 }
+.b-menu:hover{
+    background-color: rgba(52, 59, 71, 1);
+}
+
+
 .b-menu a{
     text-decoration: none;
     color: inherit;
@@ -27,15 +32,15 @@
 .b-menu_items > li > a{
     font-size: 16px;
     padding: 5px 0px;
-    border-radius: 5px;
+    border-radius: 100px;
     border: 3px solid transparent;
     transition: border .2s linear;
 }
 
 .b-menu_items > li > a:hover,
-.b-menu_items > li > a:focus {
+.b-menu_items > li > a:focus,
+.b-menu_items > li > a.active{
     text-decoration: none;
     border: 3px solid #FB3C65;
     background-color: transparent;
-    font-weight: bold;
 }

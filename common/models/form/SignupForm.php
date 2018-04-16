@@ -56,7 +56,7 @@ class SignupForm extends Model
 
             ['I_AGREE', 'compare', 'compareValue' => true, 'message' => 'Необходимо Ваше согласие на обработку персональных данных'],
 
-            [['USERNAME', 'NAME', 'SURNAME', 'PASSWORD'], 'frontend\infrastructure\CheckOnSpam', 'message' => 'Поле содержит запрещённые символы, слова'],
+            [['USERNAME', 'NAME', 'SURNAME', 'PASSWORD'], 'common\infrastructure\CheckOnSpam', 'message' => 'Поле содержит запрещённые символы, слова'],
         ];
     }
 

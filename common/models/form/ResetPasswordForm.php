@@ -51,7 +51,7 @@ class ResetPasswordForm extends Model
         return [
             ['password', 'required'],
             ['password', 'string', 'min' => 6],
-            ['password', 'frontend\infrastructure\CheckOnSpam', 'message' => 'Поле содержит запрещённые символы, слова'],
+            ['password', 'common\infrastructure\CheckOnSpam', 'message' => 'Поле содержит запрещённые символы, слова'],
         ];
     }
 

@@ -13,6 +13,9 @@
 		el.innerHTML = '<span style="font-family: \'custom-icon\'">' + entity + '</span>' + html;
 	}
 	var icons = {
+		'custom-icon-g1': '&#xe2;',
+		'custom-icon-g2': '&#xe3;',
+		'custom-icon-g3': '&#xe4;',
 		'custom-icon-logo': '&#xe1;',
 		'0': 0
 		},

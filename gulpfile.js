@@ -73,6 +73,7 @@ gulp.task('js_frontend', function (cb) {
         'frontend/web/library/owlcarousel/owl.carousel.min.js',
         'frontend/web/library/elevatezoom/jquery.elevateZoom-3.0.8.min.js',
         'frontend/web/library/fancybox/dist/jquery.fancybox.min.js',
+        'frontend/web/library/landing-nav/navigation.js',
 
         'frontend/web/js/frontend.js',
         'frontend/web/js/setting.js',

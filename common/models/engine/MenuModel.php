@@ -12,10 +12,13 @@ use common\infrastructure\DateClass;
  *
  * @property integer $ID
  * @property string $TITLE
+ * @property string $TITLE_DESCRIPTION
  * @property string $ANCHOR
  * @property integer $IS_ACTIVE
  * @property integer $CREATED_AT
  * @property integer $UPDATED_AT
+ *
+ * @property SectionModel $sections
  */
 class MenuModel extends MainModel
 {
@@ -45,6 +48,10 @@ class MenuModel extends MainModel
         $this->date_create = DateClass::TimestampToDate($this->CREATED_AT);
         $this->date_update = DateClass::TimestampToDate($this->UPDATED_AT);
         $this->isActive = $this->IS_ACTIVE == self::IS_ACTIVE ? true : false ;
+    }
+
+    public function getSections(){
+        return $this->hasMany(SectionModel::className(), ['ID_MENU' => 'ID']);
     }
 
     public static function find(){

@@ -3,9 +3,26 @@
 .letter-space-4{ letter-spacing: 4px; }
 .letter-space-5{ letter-spacing: 5px; }
 
+.font-size-14{ font-size: 14px; }
+.font-size-16{ font-size: 16px; }
+.font-size-18{ font-size: 18px; }
+.font-size-20{ font-size: 20px; }
+.font-size-22{ font-size: 22px; }
+.font-size-24{ font-size: 24px; }
+
+.nopadding {
+    padding: 0px !important;
+}
+
 .custom-icon-logo{
     padding: 0px 0px 10px 0px;
 }
 .custom-icon-logo:before {
     font-size: 40px;
 }
+.custom-icon-g1,
+.custom-icon-g2,
+.custom-icon-g3{
+    font-size: 124px;
+}
+

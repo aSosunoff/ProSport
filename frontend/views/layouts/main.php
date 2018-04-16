@@ -44,36 +44,84 @@ AppAsset::register($this);
 
   <div class="footer">
 
-    <footer class="footer_info">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4 col-sm-offset-8">
-            <ul class="nav nav-pills social-button">
-              <li><a href="https://vk.com/" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-              <li><a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-              <li><a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-              <li><a href="https://ok.ru/" target="_blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
-            </ul>
+      <div class="footer-up">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-4">
+                      <ui class="b-footer-list">
+                          <li class="b-footer-list__item b-footer-list__item_head">Информация</li>
+                          <li class="b-footer-list__item">
+                              Данный сайт носит информационно‑справочный характер
+                              и ни при каких условиях не является публичной офертой.
+                          </li>
+                      </ui>
+                  </div>
+                  <div class="col-sm-4">
+                      <ui class="b-footer-list">
+                          <li class="b-footer-list__item b-footer-list__item_head">Важно</li>
+                          <li class="b-footer-list__item">
+                              <a href="<?= Yii::$app->urlManager->createUrl(['site/privacy-policy'])?>">Политика конфиденциальности</a>
+                          </li>
+                      </ui>
+                  </div>
+                  <div class="col-sm-4">
+                      <ui class="b-footer-list">
+                          <li class="b-footer-list__item b-footer-list__item_head">Как связаться</li>
+                          <li class="b-footer-list__item b-footer-list__item_selected OpenSeansCLI letter-space-2"><?= PHONE_1; ?></li>
+                          <li class="b-footer-list__item b-footer-list__item_selected OpenSeansCLI letter-space-2"><?= PHONE_2; ?></li>
+                          <li class="b-footer-list__item b-footer-list__item_selected OpenSeansCLI letter-space-2"><?= E_MAIL; ?></li>
+                      </ui>
+                  </div>
+              </div>
           </div>
-        </div>
-      </div>
-    </footer>
 
-    <footer class="footer_bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="law">&#169; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?> - Все права защищены</div>
+          <div class="container">
+              <div class="row">
+
+                  <div class="col-lg-3 col-sm-12 nopadding">
+                      <div class="col-sm-12 col-lg-12">
+                          <ui class="b-footer-list">
+<!--                              <li class="b-footer-list__item b-footer-list__item_head">Мы в социальных сетях</li>-->
+                              <li class="b-footer-list__item_f-left b-footer-list__item_social b-footer-list__item_f">
+                                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                              </li>
+                              <li class="b-footer-list__item_f-left b-footer-list__item_social b-footer-list__item_vk">
+                                  <i class="fa fa-vk" aria-hidden="true"></i>
+                              </li>
+                              <li class="b-footer-list__item_f-left b-footer-list__item_social b-footer-list__item_i">
+                                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                              </li>
+                              <li class="b-footer-list__item_f-left b-footer-list__item_social b-footer-list__item_ok">
+                                  <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+                              </li>
+                          </ui>
+                      </div>
+                  </div>
+
+              </div>
           </div>
-          <div class="col-sm-6 developer-box">
-            <a href="https://vk.com/berg_it" target="_blank" id="developer">
-              <span class="dev-icon-berg"></span>
-              <span class="developer-description">Разработка: Alexander Berg</span>
-            </a>
-          </div>
-        </div>
       </div>
-    </footer>
+
+      <div class="footer-down">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xs-5">
+                      <?= date('Y') ?> &copy; <?= strtoupper(Yii::$app->name) ?>
+                  </div>
+                  <div class="col-xs-7">
+                      <div class="pull-right">
+                          <a class="b-creator" href="https://vk.com/berg_it" target="_blank">
+                              <div class="b-creator__text">Создание сайтов</div>
+                              <div class="b-creator__icon dev-icon-web-cook"></div>
+                          </a>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
   </div>
 
 </div>

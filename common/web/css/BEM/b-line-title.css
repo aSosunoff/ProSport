@@ -1,0 +1,30 @@
+.b-line-title{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.b-line-title_text{
+    font-family: "OpenSansCondensedBold";
+    color: #343b47;
+    font-size: 24px;
+    position: relative;
+    display: inline-block;
+    margin-right: 13px;
+}
+.b-line-title_text_inversion,
+.b-line-title_description_inversion{
+    color: #fff;
+}
+.b-line-title_text:after{
+    content: "";
+    background: #FB3C65;
+    position: absolute;
+    top: 8px;
+    right: -10px;
+    width: 3px;
+    height: 20px;
+}
+.b-line-title_description{
+    font-family: "OpenSansCondensedLightItalic";
+    letter-spacing: 1px;
+    display: inline-block;
+}

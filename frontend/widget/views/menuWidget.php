@@ -29,7 +29,7 @@ use common\models\engine\MenuModel;
     </div>
     <div class="container">
       <div class="row">
-        <ul class="nav nav-pills nav-justified b-menu_items">
+        <ul class="nav nav-pills nav-justified b-menu_items js-menu_items">
           <? foreach ($itemMenu as $item) {
             /* @var MenuModel $item */?>
             <li>
