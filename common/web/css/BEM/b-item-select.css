@@ -46,12 +46,7 @@
 
 }
 
-.b-item-select__link-img + .b-item-select__info{
-    margin-left: 60px;
-}
-.b-item-select__info{
-    display: block;
-}
+
 .b-item-select__head{
     margin-bottom: 5px;
 }

@@ -21,14 +21,26 @@ use common\models\engine\SectionModel;
         </div>
     </div>
 </div>
+
 <div class="container">
     <div class="row">
-        <div class="col-lg-12">
-            <ul class="LIST-INFO">
-                <li>Слайдер из фотографий</li>
-                <li>Приятная картинка (Людей в работе)</li>
-                <li>Чуть чуть текста</li>
-            </ul>
+        <div class="col-lg-6">
+            <div class="text-center OpenSeansCB font-size-24">
+                Доставка
+            </div>
+            <div class="font-size-24">
+                Доставка во много городов своим транспортом  (уточнять).
+                Так же работаем с транспортными компаниями (доставка до транспортной компании бесплатная) Деловыи линии,  КИТ, ПЭК, так же работаем и с другими компаниями.
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="text-center OpenSeansCB font-size-24">
+                Оплата
+            </div>
+            <div class="font-size-24">
+                Оплата в большинстве регионах при получение . Или на карту сбербанка.
+            </div>
         </div>
     </div>
 </div>

@@ -25,7 +25,7 @@ use common\models\engine\SectionModel;
     <div class="row">
         <div class="col-lg-12 text-center">
             <div class="big-text">
-                Наша стоимость 1кг = 126 руб.
+                Наша стоимость 1кг = 95 руб.
             </div>
         </div>
     </div>
