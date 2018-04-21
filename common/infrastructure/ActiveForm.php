@@ -11,7 +11,7 @@ namespace common\infrastructure;
 
 class ActiveForm extends \yii\bootstrap\ActiveForm
 {
-    public $fieldClass = 'frontend\infrastructure\ActiveField';
+    public $fieldClass = 'common\infrastructure\ActiveField';
 
     /**
      * @inheritdoc

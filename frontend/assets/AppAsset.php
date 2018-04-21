@@ -42,6 +42,8 @@ class AppAsset extends AssetBundle
             'library/fancybox/dist/jquery.fancybox.js',
             'library/landing-nav/navigation.js',
 
+            'js/project/call-me.js',
+
             'js/frontend.js',
             'js/setting.js',
             'js/scroll-up.js'

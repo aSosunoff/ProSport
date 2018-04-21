@@ -75,6 +75,8 @@ gulp.task('js_frontend', function (cb) {
         'frontend/web/library/fancybox/dist/jquery.fancybox.min.js',
         'frontend/web/library/landing-nav/navigation.js',
 
+        'frontend/web/js/project/call-me.js',
+
         'frontend/web/js/frontend.js',
         'frontend/web/js/setting.js',
         'frontend/web/js/scroll-up.js'])
