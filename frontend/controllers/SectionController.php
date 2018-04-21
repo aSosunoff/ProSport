@@ -200,43 +200,7 @@ class SectionController  extends Controller
         }
     }
 
-    public function actionGuarantees_1(){
-        try {
-
-            Yii::$app->response->format = Response::FORMAT_JSON;
-
-            $sectionDTO = new SectionDTO(Yii::$app->request->post('id'));
-
-            /* @var SectionModel $section */
-            $section = SectionModel::find()
-                ->isActive()
-                ->andWhere(['ID' => $sectionDTO->id])
-                ->one();
-
-            return [
-                'success' => true,
-                'result' => [
-                    'html' => $this->renderAjax('root', [
-                        'section' => $section,
-                        'content' => [
-                            'menu' => $section->menu
-                        ]
-                    ]),
-                ]
-            ];
-
-        } catch(Exception $ex) {
-            ExceptionLogModel::Run($ex);
-            return [
-                'success' => false,
-                'message' => [
-                    'Error' => ExceptionLogModel::DEFAULT_MESSAGE
-                ],
-            ];
-        }
-    }
-
-    public function actionGuarantees_2(){
+    public function actionPayment_1(){
         try {
 
             Yii::$app->response->format = Response::FORMAT_JSON;

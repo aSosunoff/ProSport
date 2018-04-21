@@ -1,0 +1,32 @@
+.b-info-price{
+    border: 1px solid #FB3C65;
+    margin-bottom: 15px;
+    transition: all .2s linear;
+}
+.b-info-price:hover{
+    box-shadow: 4px 4px 7px #FB3C65;
+}
+.b-info-price_title{
+    background-color: #FB3C65;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+}
+.b-info-price_body{
+
+}
+
+.b-list{
+    color: #fff;
+    padding: 15px 0px;
+    margin: 0px;
+}
+.b-list li{
+    padding: 0px 15px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.b-list_item-signature{
+    color: #929292;
+    font-size: 14px;
+}

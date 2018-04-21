@@ -32,6 +32,7 @@ class CommonAsset extends AssetBundle
             '/common/css/BEM/b-block-info.css',
             '/common/css/BEM/b-item-select.css',
             '/common/css/BEM/b-catalog-element.css',
+            '/common/css/BEM/b-info-price.css',
 
             '/common/css/Redefinition-Bootstrap/Modal-Window.css',
             '/common/css/Redefinition-Bootstrap/navbar.css',

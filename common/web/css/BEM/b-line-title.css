@@ -2,6 +2,10 @@
     width: 100%;
     margin-bottom: 15px;
 }
+.b-line-title_color-white .b-line-title_text,
+.b-line-title_color-white .b-line-title_description{
+    color: #fff;
+}
 .b-line-title_text{
     font-family: "OpenSansCondensedBold";
     color: #343b47;
@@ -10,10 +14,7 @@
     display: inline-block;
     margin-right: 13px;
 }
-.b-line-title_text_inversion,
-.b-line-title_description_inversion{
-    color: #fff;
-}
+
 .b-line-title_text:after{
     content: "";
     background: #FB3C65;

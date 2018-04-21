@@ -80,16 +80,10 @@ a:hover, a:focus {
     background-color: #ffffff;
 }
 
-#guarantees_1{
-}
-.guarantees_1{
-    background-color: #ffffff;
-}
-
-#guarantees_2{
+#payment_1{
 
 }
-.guarantees_2{
+.payment_1{
     background-color: #ffffff;
 }
 
@@ -97,7 +91,13 @@ a:hover, a:focus {
 
 }
 .order_1{
+    background-image: url(/images/bg.jpg);
     background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: 0 70%;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
 }
 
 #review_1{
