@@ -25,6 +25,15 @@ use common\models\engine\ProductModel;
             <div class="b-catalog-element__buttom-row">
                 <?= $product->NAME ?>
             </div>
+            <div class="b-catalog-element__buttom-row b-catalog-element__buttom-row-price">
+                от <?= $product->PRICE ?> руб.
+            </div>
+        </div>
+
+        <div class="b-catalog-element__button">
+            <div class="b-catalog-element__buttom-row-text">
+                <?= $product->PREVIEW_TEXT ?>
+            </div>
         </div>
     </a>
 <? } ?>

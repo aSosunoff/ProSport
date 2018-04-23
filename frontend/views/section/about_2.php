@@ -57,28 +57,28 @@ use common\models\engine\SectionModel;
                 <div class="b-block-info_title">
                     Преимущество нашей компании:
                 </div>
-                <div class="b-block-info_description b-block-info_description_right-align">
+                <div class="b-block-info_description">
                     Подход каждому клиенту,
                 </div>
-                <div class="b-block-info_description b-block-info_description_right-align">
+                <div class="b-block-info_description">
                     Быстрое изготовление заказа,
                 </div>
-                <div class="b-block-info_description b-block-info_description_right-align">
+                <div class="b-block-info_description ">
                     Быстрая отправка товара,
                 </div>
-                <div class="b-block-info_description b-block-info_description_right-align">
+                <div class="b-block-info_description">
                     Прочная упаковка при отгрузки в транспортную компании,
                 </div>
-                <div class="b-block-info_description b-block-info_description_right-align">
+                <div class="b-block-info_description">
                     Гарантия 1 год,
                 </div>
-                <div class="b-block-info_description b-block-info_description_right-align">
+                <div class="b-block-info_description">
                     Самая низкая цена на нашу продукцию по всей России,
                 </div>
-                <div class="b-block-info_description b-block-info_description_right-align">
+                <div class="b-block-info_description">
                     Гибкая система скидок,
                 </div>
-                <div class="b-block-info_description b-block-info_description_right-align">
+                <div class="b-block-info_description">
                     Изготовление под заказ.
                 </div>
             </div>

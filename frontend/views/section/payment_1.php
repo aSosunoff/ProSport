@@ -28,7 +28,7 @@ use common\models\engine\SectionModel;
             <div class="text-center OpenSeansCB font-size-24">
                 Доставка
             </div>
-            <div class="font-size-24">
+            <div class="font-size-20">
                 Доставка во много городов своим транспортом  (уточнять).
                 Так же работаем с транспортными компаниями (доставка до транспортной компании бесплатная) Деловыи линии,  КИТ, ПЭК, так же работаем и с другими компаниями.
             </div>
@@ -38,7 +38,7 @@ use common\models\engine\SectionModel;
             <div class="text-center OpenSeansCB font-size-24">
                 Оплата
             </div>
-            <div class="font-size-24">
+            <div class="font-size-20">
                 Оплата в большинстве регионах при получение . Или на карту сбербанка.
             </div>
         </div>
