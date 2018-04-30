@@ -48,11 +48,6 @@
     display: table-cell;
     padding: 0px 15px;
 }
-.b-catalog-element__buttom-row-price{
-    text-align: center;
-    color: #fff;
-    background-color: #FB3C65;
-}
 .b-catalog-element__buttom-row-text{
     color: #343b47;
     height: 50px;

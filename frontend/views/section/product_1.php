@@ -25,7 +25,9 @@ use common\models\engine\ProductModel;
 </div>
 <div class="container">
     <? // Достаём все товары данного каталога
+
     $i = 0;
+
     if (count($products) > 0){ ?>
 
         <? while (count($products) > 0) { ?>

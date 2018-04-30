@@ -2,6 +2,7 @@
 
 namespace common\models\engine;
 
+use common\infrastructure\GetGenerationUrl;
 use Yii;
 use yii\db\ActiveQuery;
 use yii\db\ActiveRecord;
@@ -37,6 +38,8 @@ class ProductModel extends MainModel
     public $date_update;
     public $isActive;
 
+    public $nameId;
+
     public static function tableName()
     {
         return self::_g(get_called_class());
@@ -61,6 +64,8 @@ class ProductModel extends MainModel
         $this->date_update = DateClass::TimestampToDate($this->UPDATED_AT);
 
         $this->isActive = $this->ACTIVE_FLAG == self::IS_ACTIVE ? true : false ;
+
+        $this->nameId = GetGenerationUrl::Generate($this->NAME);
     }
 
     public static function find(){
