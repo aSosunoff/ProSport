@@ -22,9 +22,9 @@ $prod = [
 //    'tablePrefix' => 'igi_'
 ];
 
-define('PHONE_1', '+7 (999) 999-99-99');
+define('PHONE_1', '8 (950) 615-50-78');
 define('PHONE_2', '+7 (99999) 9-99-99');
-define('E_MAIL', 'm.xxxx@yandex.ru');
+define('E_MAIL', 'p-sport@list.ru');
 
 return [
     'name' => 'ProSport',

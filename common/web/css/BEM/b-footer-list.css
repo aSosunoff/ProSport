@@ -35,7 +35,8 @@
     margin-right: 15px;
     margin-bottom: 15px;
 }
-.b-footer-list__item_social{
+
+.b-footer-list__item_social a{
     width: 41px;
     background-color: #FB3C65;
     height: 41px;
@@ -45,7 +46,15 @@
     vertical-align: middle;
     font-size: 25px;
     padding: 3px 0px;
+    color: #FFFFFF;
+    transition: all .2s linear;
 }
+
+.b-footer-list__item_social a:hover{
+    color: #FB3C65;
+    background-color: #FFFFFF;
+}
+
 .b-footer-list__item:last-child{
     margin-bottom: 0px;
 }

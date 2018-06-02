@@ -12,20 +12,44 @@ a:hover, a:focus {
     text-decoration: inherit;
 }
 
+/* OwlCarousel */
+.owl-nav .owl-prev,
+.owl-nav .owl-next{
+    width: 25px;
+}
+
+.owl-nav .owl-prev span,
+.owl-nav .owl-next span{
+    font-size: 25px;
+    font-weight: bold;
+    color: #FB3C65;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: #FB3C65;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover span{
+    color: #fff;
+}
+/***/
+
 /* Gallery */
 .gallery_images{
     display: none;
 }
 .gallery_image{
     margin: 0px !important;
+    padding: 0px !important;
 }
 .gallery_image .picture{
     float: left;
+    border-right: 1px solid rgb(52, 59, 71);
 }
 .gallery_image .description{
     float: left;
-    padding: 10px;
-    width: 220px;
+    padding: 20px 20px 10px 20px;
+    width: 400px;
 }
 /***/
 
@@ -73,7 +97,7 @@ a:hover, a:focus {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0px 0px;
-    background-image: url("/images/1234.jpg");
+    background-image: url("/images/12345.jpg");
 }
 
 #about_1{
@@ -127,12 +151,8 @@ a:hover, a:focus {
     color: #fff;
 }
 
-#review_1{
-    min-height: 960px;
-}
-.review_1{
-    background-color: #56ff83;
-}
+#review_1{}
+.review_1{}
 
 #contact_1{
 }

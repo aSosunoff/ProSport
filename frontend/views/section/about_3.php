@@ -7,6 +7,19 @@ use common\models\engine\SectionModel;
  */
 ?>
 
+<script>
+    $('.js-box-info-price').each(function(i, e){
+        var maxHeight = 0;
+        $(e).find(".js-info-price").each(function(i, e){
+            maxHeight = maxHeight > $(e).height() ? maxHeight : $(e).height();
+        });
+
+        $(e).find(".js-info-price").each(function(i, e){
+            $(e).height(maxHeight);
+        });
+    });
+</script>
+
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
@@ -30,9 +43,9 @@ use common\models\engine\SectionModel;
         </div>
     </div>
 
-    <div class="row">
+    <div class="row js-box-info-price">
         <div class="col-lg-4">
-            <div class="b-info-price">
+            <div class="b-info-price js-info-price">
                 <div class="b-info-price_title">
                     Цена разборных гантелей за пару:
                     (набор блинов на ваш выбор)
@@ -59,7 +72,7 @@ use common\models\engine\SectionModel;
         </div>
 
         <div class="col-lg-4">
-            <div class="b-info-price">
+            <div class="b-info-price js-info-price">
                 <div class="b-info-price_title">
                     Цена разборных штанг:
                 </div>
@@ -103,7 +116,7 @@ use common\models\engine\SectionModel;
         </div>
 
         <div class="col-lg-4">
-            <div class="b-info-price">
+            <div class="b-info-price js-info-price">
                 <div class="b-info-price_title">
                     Цена блинов для штанг и гантелей за штуку:
                 </div>
@@ -121,9 +134,9 @@ use common\models\engine\SectionModel;
         </div>
     </div>
 
-    <div class="row">
+    <div class="row js-box-info-price">
         <div class="col-lg-4">
-            <div class="b-info-price">
+            <div class="b-info-price js-info-price">
                 <div class="b-info-price_title">
                     Цена гантельного грифа (сталь):
                 </div>
@@ -142,7 +155,7 @@ use common\models\engine\SectionModel;
         </div>
 
         <div class="col-lg-4">
-            <div class="b-info-price">
+            <div class="b-info-price js-info-price">
                 <div class="b-info-price_title">
                     Цена прямого грифов для штанг:
                 </div>
@@ -157,7 +170,7 @@ use common\models\engine\SectionModel;
         </div>
 
         <div class="col-lg-4">
-            <div class="b-info-price">
+            <div class="b-info-price js-info-price">
                 <div class="b-info-price_title">
                     Цена изогнутого грифа:
                 </div>

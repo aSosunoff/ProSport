@@ -68,7 +68,7 @@ AppAsset::register($this);
                       <ui class="b-footer-list">
                           <li class="b-footer-list__item b-footer-list__item_head">Как связаться</li>
                           <li class="b-footer-list__item b-footer-list__item_selected OpenSeansCLI letter-space-2"><?= PHONE_1; ?></li>
-                          <li class="b-footer-list__item b-footer-list__item_selected OpenSeansCLI letter-space-2"><?= PHONE_2; ?></li>
+<!--                          <li class="b-footer-list__item b-footer-list__item_selected OpenSeansCLI letter-space-2">--><?//= PHONE_2; ?><!--</li>-->
                           <li class="b-footer-list__item b-footer-list__item_selected OpenSeansCLI letter-space-2"><?= E_MAIL; ?></li>
                       </ui>
                   </div>
@@ -82,17 +82,23 @@ AppAsset::register($this);
                       <div class="col-sm-12 col-lg-12">
                           <ui class="b-footer-list">
 <!--                              <li class="b-footer-list__item b-footer-list__item_head">Мы в социальных сетях</li>-->
-                              <li class="b-footer-list__item_f-left b-footer-list__item_social b-footer-list__item_f">
-                                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                              </li>
+<!--                              <li class="b-footer-list__item_f-left b-footer-list__item_social b-footer-list__item_f">-->
+<!--                                  <i class="fa fa-facebook" aria-hidden="true"></i>-->
+<!--                              </li>-->
                               <li class="b-footer-list__item_f-left b-footer-list__item_social b-footer-list__item_vk">
-                                  <i class="fa fa-vk" aria-hidden="true"></i>
+                                  <a href="https://vk.com/club95299093" target="_blank">
+                                      <i class="fa fa-vk" aria-hidden="true"></i>
+                                  </a>
                               </li>
                               <li class="b-footer-list__item_f-left b-footer-list__item_social b-footer-list__item_i">
-                                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                                  <a href="https://www.instagram.com/iuliiafomiheva19474/" target="_blank">
+                                      <i class="fa fa-instagram" aria-hidden="true"></i>
+                                  </a>
                               </li>
                               <li class="b-footer-list__item_f-left b-footer-list__item_social b-footer-list__item_ok">
-                                  <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+                                  <a href="https://ok.ru/profile/567074841495" target="_blank">
+                                      <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+                                  </a>
                               </li>
                           </ui>
                       </div>

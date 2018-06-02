@@ -3,6 +3,7 @@ namespace frontend\controllers;
 
 use common\models\engine\ExceptionLogModel;
 use common\models\engine\ProductModel;
+use common\models\engine\RecallModel;
 use common\models\engine\SectionModel;
 use common\models\form\CallMeForm;
 use Exception;
@@ -285,13 +286,18 @@ class SectionController  extends Controller
                 ->andWhere(['ID' => $sectionDTO->id])
                 ->one();
 
+            $recall = RecallModel::find()
+                ->isCheck()
+                ->all();
+
             return [
                 'success' => true,
                 'result' => [
                     'html' => $this->renderAjax('root', [
                         'section' => $section,
                         'content' => [
-                            'menu' => $section->menu
+                            'menu' => $section->menu,
+                            'recall' => $recall
                         ]
                     ]),
                 ]
