@@ -42,7 +42,8 @@ class SiteController extends Controller
         /* @var MenuModel $item */
         foreach($menu as $item) {
             /* @var SectionModel $section*/
-            foreach($item->sections as $section) {
+            $sections = $item->getSections()->isActive()->all();
+            foreach($sections as $section) {
                 $url = Yii::$app->urlManager->createUrl(["section/{$section->VIEW}"]);
                 $elementId = $section->VIEW;
                 $array[] = "{\"data\":{\"id\":$section->ID},\"url\":\"$url\",\"elementId\":\"#$elementId\"}";

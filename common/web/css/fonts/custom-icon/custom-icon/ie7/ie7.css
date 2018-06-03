@@ -1,3 +1,6 @@
+.custom-icon-Гантели152 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xee152;');
+}
 .custom-icon-g1 {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe2;');
 }
@@ -6,8 +9,5 @@
 }
 .custom-icon-g3 {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe4;');
-}
-.custom-icon-logo {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe1;');
 }
 

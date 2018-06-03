@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'custom-icon';
-  src:  url('fonts/custom-icon.eot?3f7l9p');
-  src:  url('fonts/custom-icon.eot?3f7l9p#iefix') format('embedded-opentype'),
-    url('fonts/custom-icon.ttf?3f7l9p') format('truetype'),
-    url('fonts/custom-icon.woff?3f7l9p') format('woff'),
-    url('fonts/custom-icon.svg?3f7l9p#custom-icon') format('svg');
+  src:  url('fonts/custom-icon.eot?3vaeu');
+  src:  url('fonts/custom-icon.eot?3vaeu#iefix') format('embedded-opentype'),
+    url('fonts/custom-icon.ttf?3vaeu') format('truetype'),
+    url('fonts/custom-icon.woff?3vaeu') format('woff'),
+    url('fonts/custom-icon.svg?3vaeu#custom-icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.custom-icon-logo:before {
+  content: "\ee152";
+  color: #fff;
+}
 .custom-icon-g1:before {
   content: "\e2";
   color: #367bbb;
@@ -35,8 +39,4 @@
 .custom-icon-g3:before {
   content: "\e4";
   color: #367bbb;
-}
-.custom-icon-logo:before {
-  content: "\e1";
-  color: #fff;
 }

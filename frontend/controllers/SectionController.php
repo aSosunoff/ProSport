@@ -17,13 +17,47 @@ use yii\filters\AccessControl;
 
 class SectionController  extends Controller
 {
-    private function _getSection($content){
+//    private function _getSection($content){
+//        try {
+//
+//            Yii::$app->response->format = Response::FORMAT_JSON;
+//
+//            $sectionDTO = new SectionDTO(Yii::$app->request->post('id'));
+//
+//            $section = SectionModel::find()
+//                ->isActive()
+//                ->andWhere(['ID' => $sectionDTO->id])
+//                ->one();
+//
+//            return [
+//                'success' => true,
+//                'result' => [
+//                    'html' => $this->renderAjax('root', [
+//                        'section' => $section,
+//                        'content' => $content
+//                    ]),
+//                ]
+//            ];
+//
+//        } catch(Exception $ex) {
+//            ExceptionLogModel::Run($ex);
+//            return [
+//                'success' => false,
+//                'message' => [
+//                    'Error' => ExceptionLogModel::DEFAULT_MESSAGE
+//                ],
+//            ];
+//        }
+//    }
+
+    public function actionTop_1(){
         try {
 
             Yii::$app->response->format = Response::FORMAT_JSON;
 
             $sectionDTO = new SectionDTO(Yii::$app->request->post('id'));
 
+            /* @var SectionModel $section */
             $section = SectionModel::find()
                 ->isActive()
                 ->andWhere(['ID' => $sectionDTO->id])
@@ -34,7 +68,7 @@ class SectionController  extends Controller
                 'result' => [
                     'html' => $this->renderAjax('root', [
                         'section' => $section,
-                        'content' => $content
+                        'content' => []
                     ]),
                 ]
             ];
@@ -48,10 +82,6 @@ class SectionController  extends Controller
                 ],
             ];
         }
-    }
-
-    public function actionTop_1(){
-        return $this->_getSection([]);
     }
 
     public function actionAbout_1(){

@@ -1,0 +1,15 @@
+.b-list-info{
+    font-size: 25px;
+    text-align: center;
+}
+
+.b-list-info li{
+    color: #fff;
+    padding: 25px 0px;
+}
+
+.b-list-info .allocated{
+    background-color: #FB3C65;
+    padding: 0px 5px;
+    font-family: OpenSansCondensedBold;
+}
