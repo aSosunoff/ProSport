@@ -13,7 +13,6 @@
     display: block;
     padding: 10px;
     border: 1px solid transparent;
-    border-radius: 100%;
 }
 /*.b-catalog-element__box-img:hover{*/
     /*box-shadow: 2px 2px 5px #636363;*/
@@ -47,6 +46,7 @@
     vertical-align: middle;
     display: table-cell;
     padding: 0px 15px;
+    width: 80px;
 }
 .b-catalog-element__buttom-row-text{
     color: #343b47;

@@ -20,7 +20,7 @@ use common\models\engine\MenuModel;
           <div class="b-btn-big">Позвони мне</div>
         </div>
         <div class="col-lg-4 text-right">
-          <ul class="letter-space-2 OpenSeansCLI">
+          <ul class="letter-space-2 font-size-20">
             <li><?= $phone ?></li>
             <li><?= $email ?></li>
           </ul>

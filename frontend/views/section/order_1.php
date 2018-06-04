@@ -24,9 +24,9 @@ use common\models\engine\SectionModel;
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-4">
             <div class="text-center OpenSeansCB font-size-24">
-                Для заказа товара нашим транспортном клиент необходим сказать.
+                Для заказа товара самовывозом.
             </div>
             <div class="font-size-24">
                 <ul class="b-list">
@@ -37,23 +37,42 @@ use common\models\engine\SectionModel;
                         &#9998; Пару или одну гантель
                     </li>
                     <li>
-                        &#9998; Номер телефона,
-                    </li>
-                    <li>
-                        &#9998; Адрес (если адресная доставка до подъезда).
+                        &#9998; Номер телефона.
                     </li>
                 </ul>
             </div>
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-lg-4">
             <div class="text-center OpenSeansCB font-size-24">
-                Для заказа товара транспортной компанией клиент необходим сказать.
+                Для заказа товара нашим курьером.
             </div>
             <div class="font-size-24">
                 <ul class="b-list">
                     <li>
-                        &#9998; ФИО,
+                        &#9998; Вес заказа,
+                    </li>
+                    <li>
+                        &#9998; Пару или одну гантель,
+                    </li>
+                    <li>
+                        &#9998; Номер телефона,
+                    </li>
+                    <li>
+                        &#9998; Адрес ( доставка до подъезда ).
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="text-center OpenSeansCB font-size-24">
+                Для заказа товара в другие регионы России.
+            </div>
+            <div class="font-size-24">
+                <ul class="b-list">
+                    <li>
+                        &#9998; Ф.И.О,
                     </li>
                     <li>
                         &#9998; Город отправки,
