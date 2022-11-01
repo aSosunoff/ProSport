@@ -14,7 +14,7 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/aSosunoff/prosport#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "^3.9.3",
     "gulp-concat": "^2.6.1",
